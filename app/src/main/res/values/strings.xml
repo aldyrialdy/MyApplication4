@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
+    <string name="email">Email</string>
+    <string name="notelp">Phone</string>
+    <string name="confpass">Confirm password</string>
+    <string name="hello">Hello World, Good Life!</string>
+
+</resources>

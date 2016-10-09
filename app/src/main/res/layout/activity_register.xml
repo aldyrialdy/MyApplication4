@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pertemuan.lat.mobpro.myapplication.RegisterActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <ImageView
+            android:id="@+id/regImgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/anjinglaut"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/usernameReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regImgLogo"
+            android:text="@string/user" />
+
+        <EditText
+            android:id="@+id/editUserNameReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameReg"
+            android:hint="Masukkan username"/>
+
+        <TextView
+            android:id="@+id/passwordReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUserNameReg"
+            android:text="@string/pass" />
+
+        <EditText
+            android:id="@+id/editPasswordReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordReg"
+            android:password="true"
+            android:hint="Masukkan password"/>
+
+        <TextView
+            android:id="@+id/emailReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editPasswordReg"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/editEmailReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailReg"
+            android:password="true"
+            android:hint="Masukkan email"/>
+
+        <TextView
+            android:id="@+id/noTelpReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editEmailReg"
+            android:text="@string/notelp" />
+
+        <EditText
+            android:id="@+id/editTelpReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noTelpReg"
+            android:password="true"
+            android:hint="Masukkan nomor telepon"/>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTelpReg"
+            android:layout_alignParentRight="true"
+            android:text="Save"/>
+
+    </RelativeLayout>
+</RelativeLayout>

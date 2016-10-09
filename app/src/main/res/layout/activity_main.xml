@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pertemuan.lat.mobpro.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/anjinglaut"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_logo"
+            android:text="@string/user" />
+
+        <EditText
+            android:id="@+id/editUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:hint="Masukkan username"/>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUserName"
+            android:text="@string/pass" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:password="true"
+            android:hint="Masukkan password"/>
+
+        <CheckBox
+            android:id="@+id/checkSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editPassword"
+            android:text="Keep me sign in" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rel1"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Login"/>
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Register"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin1"
+        android:paddingTop="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#698cb6"
+            android:textColor="#ffffff"
+            android:text="Sign in with Facebook"/>
+        <Button
+            android:id="@+id/btnGmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d25a3e"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:text="Sign in with Gmail"/>
+        <Button
+            android:id="@+id/btnTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#457dd8"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:text="Sign in with Twitter"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
